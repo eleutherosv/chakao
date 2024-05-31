@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu with Animations</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .menu-enter {
+      transition: all 0.5s ease-in-out;
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    .menu-enter-active {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    .menu-exit {
+      transition: all 0.5s ease-in-out;
+      transform: translateX(0);
+      opacity: 1;
+    }
+    .menu-exit-active {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+  </style>
+</head>
+<body class="bg-gray-100">
+
+  <!-- Navbar -->
+  <nav class="flex items-center justify-between p-4 bg-blue-600 text-white">
+    <div class="logo">
+      <img src="logo.png" alt="Logo" class="h-8">
+    </div>
+    <button id="menu-button" class="bg-white text-blue-600 px-4 py-2 rounded">
+      Menu
+    </button>
+  </nav>
+
+  <!-- Menu -->
+  <div id="menu" class="fixed top-0 right-0 w-1/2 h-full bg-white shadow-lg transform translate-x-full menu-enter">
+    <div class="p-4">
+      <div class="flex justify-between items-center mb-4">
+        <h2 class="text-2xl font-bold">Menu</h2>
+        <button id="close-button" class="text-red-600">
+          Close
+        </button>
+      </div>
+      <div class="space-y-4">
+        <div class="space-y-2">
+          <h3 class="font-semibold">Section 1</h3>
+          <ul class="list-disc ml-4">
+            <li>Component 1</li>
+            <li>Component 2</li>
+            <li>Component 3</li>
+          </ul>
+        </div>
+        <div class="space-y-2">
+          <h3 class="font-semibold">Section 2</h3>
+          <ul class="list-disc ml-4">
+            <li>Component 4</li>
+            <li>Component 5</li>
+            <li>Component 6</li>
+          </ul>
+        </div>
+        <div class="space-y-2">
+          <h3 class="font-semibold">Section 3</h3>
+          <ul class="list-disc ml-4">
+            <li>Component 7</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const menuButton = document.getElementById('menu-button');
+    const closeButton = document.getElementById('close-button');
+    const menu = document.getElementById('menu');
+    let menuOpen = false;
+
+    const openMenu = () => {
+      menu.classList.remove('menu-enter');
+      menu.classList.add('menu-enter-active');
+      menuOpen = true;
+    };
+
+    const closeMenu = () => {
+      menu.classList.remove('menu-enter-active');
+      menu.classList.add('menu-exit-active');
+      setTimeout(() => {
+        menu.classList.remove('menu-exit-active');
+        menu.classList.add('menu-enter');
+      }, 500);
+      menuOpen = false;
+    };
+
+    menuButton.addEventListener('click', () => {
+      if (menuOpen) {
+        closeMenu();
+      } else {
+        openMenu();
+      }
+    });
+
+    closeButton.addEventListener('click', closeMenu);
+  </script>
+</body>
+</html>
