@@ -30,7 +30,6 @@
 }
 
 </style>
-<link href="https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap" rel="stylesheet">
 </head>
 <body>   
 
@@ -74,9 +73,9 @@
 </section>
 
 
-<section class="light relative z-0 h-[80vh] bg-gray-200 flex items-center justify-center bg-right parallax" style="background-image: url('img/café-right.jpg');">
+<section class="light relative z-0 h-[80vh] bg-right parallax flex items-center justify-center xl:flex items-left justify-left" style="background-image: url('img/café-right.jpg');">
     <div class="absolute inset-0 bg-white opacity-50 lg:hidden"></div>
-    <div class="relative text-center">
+    <div class="relative text-center lg:text-left">
         <h2 class="text-3xl mb-4">Brownish Café</h2>
         <p class="text-lg">Explore new sensations with your morning coffee!</p>
     </div>
@@ -251,7 +250,7 @@
     window.addEventListener('scroll', function() {
         const parallax = document.querySelector('.parallax');
         let offset = window.pageYOffset;
-        parallax.style.backgroundPositionY = -offset * 0.5 + 'px';
+        parallax.style.backgroundPositionY = -offset * 0.2 + 'px';
     });
 </script>
 </body>

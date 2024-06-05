@@ -1543,6 +1543,10 @@ select {
     display: block;
   }
 
+  .xl\:flex {
+    display: flex;
+  }
+
   .xl\:grid {
     display: grid;
   }
