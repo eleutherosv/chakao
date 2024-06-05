@@ -1508,6 +1508,10 @@ select {
     margin-top: 6rem;
   }
 
+  .lg\:ml-8 {
+    margin-left: 2rem;
+  }
+
   .lg\:block {
     display: block;
   }
@@ -1539,6 +1543,10 @@ select {
     margin-top: 0px;
   }
 
+  .xl\:ml-8 {
+    margin-left: 2rem;
+  }
+
   .xl\:block {
     display: block;
   }
@@ -1559,7 +1567,31 @@ select {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
+  .xl\:items-start {
+    align-items: flex-start;
+  }
+
+  .xl\:items-end {
+    align-items: flex-end;
+  }
+
+  .xl\:items-center {
+    align-items: center;
+  }
+
+  .xl\:justify-start {
+    justify-content: flex-start;
+  }
+
+  .xl\:justify-end {
+    justify-content: flex-end;
+  }
+
   .xl\:gap-8 {
     gap: 2rem;
+  }
+
+  .xl\:text-left {
+    text-align: left;
   }
 }
