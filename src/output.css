@@ -991,6 +991,10 @@ select {
   max-width: 80rem;
 }
 
+.max-w-4xl {
+  max-width: 56rem;
+}
+
 .origin-center {
   transform-origin: center;
 }
@@ -1324,6 +1328,11 @@ select {
   line-height: 1;
 }
 
+.text-7xl {
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -1385,12 +1394,21 @@ select {
   color: rgb(220 38 38 / var(--tw-text-opacity));
 }
 
+.text-red-700 {
+  --tw-text-opacity: 1;
+  color: rgb(185 28 28 / var(--tw-text-opacity));
+}
+
 .opacity-80 {
   opacity: 0.8;
 }
 
 .opacity-50 {
   opacity: 0.5;
+}
+
+.opacity-70 {
+  opacity: 0.7;
 }
 
 .shadow-lg {
@@ -1615,6 +1633,14 @@ select {
 
   .xl\:mr-8 {
     margin-right: 2rem;
+  }
+
+  .xl\:ml-16 {
+    margin-left: 4rem;
+  }
+
+  .xl\:ml-24 {
+    margin-left: 6rem;
   }
 
   .xl\:block {
