@@ -248,11 +248,12 @@
         });
     });
 </script>
+</section>
 <script>
     window.addEventListener('scroll', function() {
         const parallax = document.querySelector('.parallax');
         let offset = window.pageYOffset;
-        parallax.style.backgroundPositionY = offset * 0.5 + 'px';
+        parallax.style.backgroundPositionY = -offset * 0.5 + 'px';
     });
 </script>
 </body>
