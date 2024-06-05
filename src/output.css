@@ -1245,6 +1245,11 @@ select {
   padding-right: 1.5rem;
 }
 
+.px-16 {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
 .pt-16 {
   padding-top: 4rem;
 }
