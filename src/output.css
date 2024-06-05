@@ -1142,6 +1142,10 @@ select {
   background-image: url('img/lines.png');
 }
 
+.bg-cover {
+  background-size: cover;
+}
+
 .bg-center {
   background-position: center;
 }
@@ -1206,6 +1210,10 @@ select {
 
 .pt-8 {
   padding-top: 2rem;
+}
+
+.text-left {
+  text-align: left;
 }
 
 .text-center {
@@ -1515,6 +1523,10 @@ select {
 
   .lg\:pt-32 {
     padding-top: 8rem;
+  }
+
+  .lg\:text-left {
+    text-align: left;
   }
 }
 
