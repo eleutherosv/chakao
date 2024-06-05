@@ -1547,6 +1547,10 @@ select {
     margin-left: 2rem;
   }
 
+  .xl\:mr-8 {
+    margin-right: 2rem;
+  }
+
   .xl\:block {
     display: block;
   }
