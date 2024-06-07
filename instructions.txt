@@ -1,0 +1,10 @@
+open github desktop
+choose your repo
+open your file explorer
+launch cmd
+cd (change directory) to Chakao
+once in the right dir, you launch tailwind via this command:
+
+npx tailwind -i ./src/input.css -o ./src/output.css --watch
+---> Rebuilding .... Done.
+
