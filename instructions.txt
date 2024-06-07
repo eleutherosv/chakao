@@ -1,6 +1,7 @@
 open github desktop
 choose your repo
 open your file explorer
+open in visual code
 launch cmd
 cd (change directory) to Chakao
 once in the right dir, you launch tailwind via this command:
